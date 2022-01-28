@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Portfolio</title>
+    <title>Aidan's Portfolio</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;700&display=swap" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -36,18 +37,14 @@
             <li>
                 <a href="#skills">Skills</a>
             </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
         </ul>
     </header>
     <!-- End header -->
 
     <div id="lead">
         <div id="lead-content">
-            <h1>Aidan Tay</h1>
-            <h2>Student of NYJC</h2>
-            <a href="#" class="btn-rounded-white">Download Resume</a>
+            <h1 id="nametitle">Aidan Tay</h1>
+            <h2 id="subtitle">Student of NYJC</h2>
         </div>
         <!-- End #lead-content -->
 
@@ -69,7 +66,7 @@
                     <h2 class="heading">About Me</h2>
                 </div>
                 <div class="col-md-8">
-                    <p>
+                    <ul>
                         <li>
                             Student in NYJC taking Math, Chemistry, Computing and Economics
                         </li>
@@ -85,36 +82,38 @@
                         <li>
                             Needs help understanding why people celebrate New Years and birthdays
                         </li>
-
-                    </p>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
     <!-- End #about -->
+    <hr>
 
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
-            None :(
+            None
         </div>
     </div>
     <!-- End #experience -->
+    <hr>
 
     <div id="education">
         <h2 class="heading">Education</h2>
         <div class="education-block">
-            <h3>Nan Chiau High School</h3>
-            <span class="education-date">2016 - 2020</span>
-            <h4>O-Levels</h4>
+            <h3 class="education-name">Nan Chiau High School</h3>
+            <span class="education-info">2016 - 2020</span>
+            <h4 class="education-info">O-Levels</h4>
             <p>
                 O-levels in Chemistry, Math, Biology, Physics, Social Studies and History, achieving a L1R5 of 6.
             </p>
         </div>
+
         <div class="education-block">
-            <h3>Nanyang Junior College</h3>
-            <span class="education-date">2021-2022</span>
-            <h4>A-Levels</h4>
+            <h3 class="education-name">Nanyang Junior College</h3>
+            <span class="education-info">2021-2022</span>
+            <h4 class="education-info">A-Levels</h4>
             <p>
                 O-levels in Math, Chemistry, Computing and Economics, achieving a rank point of <b><em>x</em></b>.
             </p>
@@ -122,6 +121,7 @@
         <!-- End .education-block -->
     </div>
     <!-- End #education -->
+    <hr>
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
@@ -130,11 +130,11 @@
                 <div class="project shadow-large">
 
                     <div class="project-info">
-                        <h3>Platforming game?</h3>
+                        <h3>"Platforming" Game</h3>
                         <p>
-                            Very bad game coded in 2 days during 2020 :) Jump on multiple "enemies" to get a combo. 
+                            Very bad game coded in 2 days in 2020 :) 
                         </p>
-                        <a href="https://zarufox.github.io/Websitegame/">Click to view project</a>
+                        <a href="https://zarufox.github.io/Websitegame/"><b>Click to view project</b></a>
                     </div>
                     <!-- End .project-info -->
                 </div>
@@ -142,31 +142,19 @@
         </div>
     </div>
     <!-- End #projects -->
+    <hr>
 
     <div id="skills">
         <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Basic C#</li>
-            <li>Basic C++</li>
-            <li>Basic JavaScript</li>
+        <ul class="indivskills"> 
+            <li>C#</li>
+            <li>C++</li>
+            <li>HTML</li>
             <li>Python</li>
         </ul>
     </div>
     <!-- End #skills -->
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
+    <hr>
 
     <footer>
         <div class="container">
@@ -185,12 +173,6 @@
                     <ul>
                         <li>
                             <a href="https://github.com/Aidan-tay">GitHub</a>
-                        </li>
-                        <li>
-                            Twitter is private :)
-                        </li>
-                        <li>
-                            No Facebook or Instagram
                         </li>
                     </ul>
                 </div>
